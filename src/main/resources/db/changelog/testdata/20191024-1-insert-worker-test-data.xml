@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="litvas" id="20191024-1" context="testdata">
+
+        <insert tableName="worker">
+            <column name="firstname" value="Inna"/>
+            <column name="lastname" value="Petrova"/>
+            <column name="salary" value="25000"/>
+            <column name="position" value="qa"/>
+            <column name="current_project" value="1"/>
+        </insert>
+
+        <insert tableName="worker">
+            <column name="firstname" value="Mark"/>
+            <column name="lastname" value="Tsukerberg"/>
+            <column name="salary" value="2500000"/>
+            <column name="position" value="consult"/>
+            <column name="current_project" value="1"/>
+        </insert>
+
+        <insert tableName="worker">
+            <column name="firstname" value="Petr"/>
+            <column name="lastname" value="Ivanov"/>
+            <column name="salary" value="15000"/>
+            <column name="position" value="analist"/>
+            <column name="current_project" value="2"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

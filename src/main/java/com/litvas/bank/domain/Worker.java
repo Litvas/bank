@@ -4,6 +4,7 @@ import lombok.Data;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Data
@@ -17,6 +18,7 @@ public class Worker {
     private String lastname;
     private Long salary;
     private String position;
+    @OneToOne
     private Project currentProject;
 
 }

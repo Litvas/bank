@@ -6,6 +6,7 @@
                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <include file="/db/changelog/schema/20191024-1-create-test-tables.xml"/>
-    <include file="/db/changelog/testdata/20191024-1-insert-test-data.xml"/>
+    <include file="/db/changelog/testdata/20191024-1-insert-project-test-data.xml"/>
+    <include file="/db/changelog/testdata/20191024-1-insert-worker-test-data.xml"/>
 
 </databaseChangeLog>
