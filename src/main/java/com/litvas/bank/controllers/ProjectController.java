@@ -1,6 +1,7 @@
 package com.litvas.bank.controllers;
 
 import com.litvas.bank.domain.Project;
+import com.litvas.bank.domain.Worker;
 import com.litvas.bank.repositories.ProjectRepository;
 import com.litvas.bank.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,5 +24,10 @@ public class ProjectController {
     @PostMapping
     public Project createProject(@RequestBody Project project) {
         return projectService.saveProject(project);
+    }
+
+    @GetMapping("/{projectId}")
+    public List<Worker> getAllWorkerInProject(@PathVariable Long projectId) {
+        return projectService.workersByProject(projectId);
     }
 }

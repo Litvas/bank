@@ -11,4 +11,6 @@ public interface ProjectService {
 
     Project saveProject(Project project);
 
+    List<Worker> workersByProject(Long projectId);
+
 }
