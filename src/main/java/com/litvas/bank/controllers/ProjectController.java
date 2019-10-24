@@ -2,10 +2,9 @@ package com.litvas.bank.controllers;
 
 import com.litvas.bank.domain.Project;
 import com.litvas.bank.repositories.ProjectRepository;
+import com.litvas.bank.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -14,10 +13,15 @@ import java.util.List;
 public class ProjectController {
 
     @Autowired
-    private ProjectRepository projectRepository;
+    private ProjectService projectService;
 
     @GetMapping
     public List<Project> getProjects() {
-        return projectRepository.findAll();
+        return projectService.getAllProjects();
+    }
+
+    @PostMapping
+    public Project createProject(@RequestBody Project project) {
+        return projectService.saveProject(project);
     }
 }

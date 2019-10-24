@@ -1,5 +1,6 @@
 package com.litvas.bank.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import javax.persistence.*;
 @Data
 @Table
 @Entity
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Worker {
 
     @Id
