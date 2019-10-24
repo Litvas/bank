@@ -8,6 +8,7 @@
     <changeSet author="litvas" id="20191024-1" context="testdata">
 
         <insert tableName="project">
+            <column name="id" value="1"/>
             <column name="title" value="Metadata editor"/>
             <column name="description" value="Some description 1"/>
             <column name="start_date" value="2019-07-31"/>
@@ -15,6 +16,7 @@
         </insert>
 
         <insert tableName="project">
+            <column name="id" value="2"/>
             <column name="title" value="Transactional monitor"/>
             <column name="description" value="Some description 2"/>
             <column name="start_date" value="2019-03-25"/>

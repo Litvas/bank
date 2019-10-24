@@ -12,7 +12,7 @@
             <column name="lastname" value="Petrova"/>
             <column name="salary" value="25000"/>
             <column name="position" value="qa"/>
-            <column name="current_project" value="1"/>
+            <column name="current_project_id" value="1"/>
         </insert>
 
         <insert tableName="worker">
@@ -20,7 +20,7 @@
             <column name="lastname" value="Tsukerberg"/>
             <column name="salary" value="2500000"/>
             <column name="position" value="consult"/>
-            <column name="current_project" value="1"/>
+            <column name="current_project_id" value="1"/>
         </insert>
 
         <insert tableName="worker">
@@ -28,7 +28,7 @@
             <column name="lastname" value="Ivanov"/>
             <column name="salary" value="15000"/>
             <column name="position" value="analist"/>
-            <column name="current_project" value="2"/>
+            <column name="current_project_id" value="2"/>
         </insert>
 
     </changeSet>

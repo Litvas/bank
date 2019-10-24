@@ -2,9 +2,7 @@ package com.litvas.bank.domain;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
@@ -13,6 +11,8 @@ import java.util.Date;
 public class Project {
 
     @Id
+    @SequenceGenerator(name = "project_sequence", sequenceName = "project_sequence")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "project_sequence")
     private Long id;
     private String title;
     private String description;

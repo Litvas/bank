@@ -15,7 +15,7 @@
             <column name="lastname" type="varchar(256)"/>
             <column name="salary" type="bigint"/>
             <column name="position" type="varchar(256)"/>
-            <column name="current_project" type="bigint"/>
+            <column name="current_project_id" type="bigint"/>
         </createTable>
 
         <createTable tableName="project">
