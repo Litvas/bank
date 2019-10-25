@@ -17,7 +17,7 @@ public interface WorkerService {
 
     Worker addWorkerToProject(Long workerId, Long projectId);
 
-    Worker removeFromProject(Long workerId);
+    Worker removeWorkerFromProject(Long workerId);
 
     Map<String, Worker> changeWorkersByProjects(Map<String, Long> workers);
 

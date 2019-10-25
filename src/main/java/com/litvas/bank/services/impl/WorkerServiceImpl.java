@@ -45,7 +45,7 @@ public class WorkerServiceImpl implements WorkerService {
     }
 
     @Override
-    public Worker removeFromProject(Long workerId) {
+    public Worker removeWorkerFromProject(Long workerId) {
         Worker worker = getOneWorker(workerId);
         worker.setCurrentProject(null);
         return saveWorker(worker);
@@ -57,7 +57,7 @@ public class WorkerServiceImpl implements WorkerService {
         Worker currentWorker = getOneWorker(workers.get("currentWorker"));
         Worker futureWorker = getOneWorker(workers.get("futureWorker"));
         futureWorker.setCurrentProject(new Project());
-        futureWorker.getCurrentProject().setId(currentWorker.getCurrentProject().getId());
+        futureWorker.getCurrentProject().setId(1L);
         currentWorker.setCurrentProject(null);
         saveWorker(futureWorker);
         saveWorker(currentWorker);

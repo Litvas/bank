@@ -2,7 +2,6 @@ package com.litvas.bank.controllers;
 
 import com.litvas.bank.domain.Worker;
 import com.litvas.bank.services.WorkerService;
-import jdk.nashorn.internal.ir.ReturnNode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -43,7 +42,7 @@ public class WorkerController {
 
     @PutMapping("remove_from_project")
     public Worker removeWorkerFromProject(@RequestBody Worker worker) {
-        return workerService.removeFromProject(worker.getId());
+        return workerService.removeWorkerFromProject(worker.getId());
     }
 
     @PutMapping("change_project")
