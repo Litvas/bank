@@ -1,6 +1,5 @@
 package com.litvas.bank.repositories;
 
-import com.litvas.bank.domain.Project;
 import com.litvas.bank.domain.Worker;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -5,7 +5,6 @@ import com.litvas.bank.domain.Worker;
 import com.litvas.bank.repositories.ProjectRepository;
 import com.litvas.bank.repositories.WorkerRepository;
 import com.litvas.bank.services.ProjectService;
-import com.litvas.bank.services.WorkerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

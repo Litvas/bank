@@ -2,7 +2,6 @@ package com.litvas.bank.controllers;
 
 import com.litvas.bank.domain.Project;
 import com.litvas.bank.domain.Worker;
-import com.litvas.bank.repositories.ProjectRepository;
 import com.litvas.bank.services.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,4 +29,5 @@ public class ProjectController {
     public List<Worker> getAllWorkerInProject(@PathVariable Long projectId) {
         return projectService.workersByProject(projectId);
     }
+
 }
